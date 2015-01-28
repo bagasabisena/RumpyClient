@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/add_contact_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/find_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find" />
+    
+    <FrameLayout 
+        android:id="@+id/addcontact_frame_container"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

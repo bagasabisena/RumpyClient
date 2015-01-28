@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="tab_opaque">#80ffffff</color>
+    <color name="tab_bold">#ffffffff</color>
+    <color name="rumpy_green">#69c7b9</color>
+    <color name="rumpy_red">#d32961</color>
+    <color name="rumpy_orange">#f58a1e</color>
+    <color name="rumpy_yellow">#fbb812</color>
+    
+</resources>

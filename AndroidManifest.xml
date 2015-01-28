@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.rumpy.client.android"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light" >
+        <activity
+            android:name=".MainTabActivity"
+            android:label="@string/title_activity_main_tab" >
+        </activity>
+        
+        <activity 
+            android:name=".ConversationActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTop">     
+        </activity>
+        
+        <activity 
+            android:name=".FirstTimeActivity"
+            android:label="First time activity">
+        </activity>
+        
+        <activity 
+            android:name=".TopActivity"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".AddContactActivity"
+            android:label="Add Contact Activity"></activity>
+        
+        <activity 
+            android:name=".NewContactActivity"
+            android:theme="@style/Theme.Sherlock.Light.Dialog">
+            
+        </activity>
+        
+        <activity 
+            android:name=".WelcomeActivity"
+            android:label="Welcome Activity"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar">
+        </activity>
+        
+        <activity 
+            android:name=".SignupActivity"
+            android:label="Join">
+        </activity>
+        
+        <service 
+            android:name=".RumpyService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/service_name">
+        </service>
+        
+        <receiver 
+            android:name=".StartAtBootServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        
+        <provider 
+            android:name="co.rumpy.client.android.db.RosterProvider"
+            android:authorities="co.rumpy.client.android.db.RosterProvider"
+            android:exported="false">
+        </provider>
+        
+        <provider 
+            android:name="co.rumpy.client.android.db.MessageProvider"
+            android:authorities="co.rumpy.client.android.db.MessageProvider"
+            android:exported="false">
+        </provider>
+        
+        
+    </application>
+
+</manifest>

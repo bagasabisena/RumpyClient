@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_hand"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/transparent">
+        
+        <TextView
+            android:id="@+id/message_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+        
+        <ImageView
+        	android:id="@+id/image_state_left"
+        	android:layout_width="20dp"
+        	android:layout_height="20dp" />
+        
+        <TextView 
+            android:id="@+id/time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_left"
+            android:layout_alignLeft="@+id/message_left"
+            android:paddingRight="5dp"
+            android:textSize="8sp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/right_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="50dp"
+        android:background="@android:color/transparent" >
+        
+       	<ImageView
+       		android:id="@+id/image_state_right"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentTop="true"
+           	android:layout_alignParentLeft="true" />
+       
+       	<TextView
+            android:id="@+id/message_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="12dp"
+            android:layout_toRightOf="@+id/image_state_right" />
+       	
+       	<TextView 
+           	android:id="@+id/time_right"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:layout_alignBottom="@+id/message_right"
+           	android:layout_alignRight="@+id/message_right"
+           	android:textSize="8sp"/>
+        
+        
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

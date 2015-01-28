@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/welcome_textview_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Hello"
+        android:textSize="70sp"
+        android:textColor="@color/rumpy_green" />
+
+    <TextView
+        android:id="@+id/welcome_textview_welcometorumpy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/welcome_textview_hello"
+        android:text="Welcome to Rumpy"
+        android:textSize="35sp"
+        android:textColor="@color/rumpy_yellow" />
+
+    <Button
+        android:id="@+id/welcome_textview_signup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/rumpy_red"
+        android:text="Join" />
+
+    <Button
+        android:id="@+id/welcome_textview_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_textview_signup"
+        android:layout_below="@+id/welcome_textview_signup"
+        android:layout_marginTop="20dp"
+        android:background="@color/rumpy_orange"
+        android:text="Sign in" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/addcontact_fragment_imagethumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_thumb" />
+
+    <TextView
+        android:id="@+id/addcontact_fragment_textfullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/addcontact_fragment_imagethumb"
+        android:text="not found"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addcontact_fragment_textsignum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addcontact_fragment_textfullname"
+        android:text="not found"
+        android:layout_below="@+id/addcontact_fragment_textfullname"/>
+
+    <TextView
+        android:id="@+id/addcontact_fragment_textpresence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addcontact_fragment_textsignum"
+        android:layout_below="@+id/addcontact_fragment_textsignum"
+        android:text="not found" />
+
+    <Button
+        android:id="@+id/addcontact_fragment_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addcontact_fragment_textpresence"
+        android:layout_below="@+id/addcontact_fragment_imagethumb"
+        android:text="Add contact" />
+
+</RelativeLayout>

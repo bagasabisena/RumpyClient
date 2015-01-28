@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/signup_edittext_confirmpassword"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signup_edittext_password"
+        android:layout_below="@+id/signup_edittext_password"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signup_button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/signup_edittext_confirmpassword"
+        android:layout_below="@+id/signup_edittext_confirmpassword"
+        android:layout_marginTop="20dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/signup_textview_signupstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signup_edittext_confirmpassword"
+        android:layout_alignTop="@+id/signup_button_register" />
+
+    <EditText
+        android:id="@+id/signup_edittext_password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signup_edittext_fullname"
+        android:layout_below="@+id/signup_edittext_fullname"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/signup_edittext_fullname"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signup_edittext_signum"
+        android:layout_below="@+id/signup_edittext_signum"
+        android:ems="10"
+        android:hint="Display Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/signup_edittext_signum"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Rumpy ID"
+        android:inputType="textEmailAddress" />
+
+</RelativeLayout>

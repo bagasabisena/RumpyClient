@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/recent_imageview_contactimage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/recent_textview_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/recent_imageview_contactimage"
+        android:layout_alignTop="@+id/recent_imageview_contactimage"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="fullname"/>
+    
+    <TextView 
+        android:id="@+id/recent_textview_lastchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recent_textview_fullname"
+        android:layout_toRightOf="@+id/recent_imageview_contactimage"
+        android:layout_alignBottom="@+id/recent_imageview_contactimage"
+        android:layout_alignLeft="@+id/recent_textview_fullname"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:text="message"/>
+
+    <TextView
+        android:id="@+id/recent_textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recent_textview_fullname"
+        android:layout_alignBottom="@+id/recent_textview_fullname"
+        android:layout_alignParentRight="true"
+        android:text="timestamp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

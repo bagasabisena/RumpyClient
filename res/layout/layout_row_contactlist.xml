@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/contactThumb"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/contactFullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/contactThumb"
+        android:layout_alignTop="@+id/contactThumb"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+    
+    <TextView 
+        android:id="@+id/contactLastPresence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactFullname"
+        android:layout_toRightOf="@+id/contactThumb"
+        android:layout_alignBottom="@+id/contactThumb"
+        android:layout_alignLeft="@+id/contactFullname"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+    
+
+</RelativeLayout>
